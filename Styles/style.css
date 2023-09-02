@@ -10,7 +10,7 @@
 .section-title {
   font-size: 45px;
   color: #131313;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .paragraph {
@@ -123,6 +123,7 @@ main {
   justify-content: space-between;
   /* align-items: center; */
   gap: 100px;
+  margin-bottom: 130px;
 }
 
 .liked-feature-title {
@@ -180,6 +181,52 @@ main {
   line-height: 40px;
 }
 
+.facts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px 0 130px;
+  text-align: center;
+  gap: 20px;
+}
+
+.facts-div {
+  padding: 40px 20px;
+  width: 241px;
+  /* height: px; */
+  border-radius: 8px;
+  border: 1px solid #FF900E;
+  /* width: 100%; */
+}
+
+.facts-div p {
+  color: #727272;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.sponsors-section {
+  text-align: center;
+}
+
+.sponsors-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+footer {
+  border-radius: 8px;
+  background: #FFF4E7;
+  text-align: center;
+  color: #424242;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 130px 240px 0;
+  padding: 40px;
+}
+
 /* responsive design for mobile  */
 @media screen and (max-width:576px) {
   header {
@@ -192,7 +239,9 @@ main {
 
   .nav-container,
   .features-section,
-  .liked-features {
+  .liked-features,
+  .facts,
+  .sponsors-img {
     /* display: flex; */
     flex-direction: column;
     gap: 0;
@@ -208,6 +257,11 @@ main {
     margin: 0 auto;
   }
 
+  .liked-features {
+    margin-bottom: 80px;
+    /* text-align: center; */
+  }
+
   .features-section .img-div {
     margin-bottom: 2rem;
   }
@@ -218,6 +272,30 @@ main {
 
   .badge {
     left: 0;
+  }
+
+  .facts-section {
+    text-align: center;
+  }
+
+  .facts {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .facts-div {
+    margin-top: 20px;
+
+  }
+
+  .sponsors-img img {
+    margin: 20px 0;
+  }
+
+  footer {
+    margin: 0;
+    padding: 40px;
+    font-size: 20px;
   }
 }
 
@@ -257,5 +335,35 @@ main {
 
   .feature-sec-description {
     text-align: center;
+  }
+
+  .facts-container {
+
+    text-align: center;
+
+  }
+
+  .facts,
+  .sponsors-img {
+    /* display: flex; */
+    flex-direction: column;
+    gap: 0;
+    margin-top: 30px;
+
+  }
+
+  .facts-div {
+    /* width: 100%; */
+    margin-top: 30px;
+  }
+
+  .sponsors-img img {
+    margin: 20px 0;
+  }
+
+  footer {
+    margin: 0;
+    padding: 40px;
+    font-size: 20px;
   }
 }
